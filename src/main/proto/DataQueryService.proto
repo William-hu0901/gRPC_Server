@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "net.daodao.grpc";
+option java_outer_classname = "DataQueryServiceProto";
+
+service DataQueryService {
+    rpc QueryData (DataQueryRequest) returns (DataQueryResponse);
+}
+
+message DataQueryRequest {
+    string query = 1;
+}
+
+message DataQueryResponse {
+    string result = 1;
+}
