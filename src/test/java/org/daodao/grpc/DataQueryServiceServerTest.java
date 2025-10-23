@@ -1,4 +1,4 @@
-package net.daodao.grpc;
+package org.daodao.grpc;
 
 import io.grpc.Server;
 import io.grpc.inprocess.InProcessChannelBuilder;
